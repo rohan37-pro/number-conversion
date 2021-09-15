@@ -1,3 +1,4 @@
+
 class bin2dec :
 
 	def __init__(self):
@@ -16,7 +17,6 @@ class bin2dec :
 			pow-=1
 		return decimal
 
-
 	def convert_left(self):
 		decimal = 0
 		pow = 0
@@ -25,13 +25,13 @@ class bin2dec :
 			pow+=1
 		return decimal
 
-
-while True:
-	mode = input("select mode- convert(c)/quit(q) : ")
-	if mode=="c":
-		convert = bin2dec()
-		decimal = convert.convert_left() + convert.convert_right()
-		print(f"decimal of binary {convert.binary} is {decimal}")
-	if mode=="q":
-		break
+if __name__ == "__main__":
+	while True:
+		mode = input("select mode- convert(c)/quit(q) : ")
+		if mode=="c":
+			convert = bin2dec()
+			decimal = convert.convert_left() + convert.convert_right()
+			print(f"decimal of binary {convert.binary} is {decimal}")
+		if mode=="q":
+			break
 		
