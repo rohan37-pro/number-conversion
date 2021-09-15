@@ -1,3 +1,4 @@
+
 class dec2bin:
 
 	def __init__(self):
@@ -36,13 +37,13 @@ class dec2bin:
 			self.left_part = int(self.left_part)//2
 
 		return binary
-
-while True:
-	mode = input("select - convert(c)/quit(q) : ")
-	if mode=='c':
-		convert = dec2bin()
-		binary = convert.convert_left_part() + '.' + convert.convert_right_part()
-		print(f"decimal of binary {convert.decimal} is {binary}")
-	if mode=="q":
-		break
+if __name__ == '__main__':
+	while True:
+		mode = input("select - convert(c)/quit(q) : ")
+		if mode=='c':
+			convert = dec2bin()
+			binary = convert.convert_left_part() + '.' + convert.convert_right_part()
+			print(f"decimal of binary {convert.decimal} is {binary}")
+		if mode=="q":
+			break
 		
