@@ -17,7 +17,6 @@ class oct2bin:
 			self.right_part = ""
 			self.binary = self.convert(self.left_part) 
 
-
 	def convert(self,octal):
 		binary = ""
 		for i in octal:
